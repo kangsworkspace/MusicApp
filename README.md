@@ -53,7 +53,9 @@ Cell의 간격, 높이 등을 설정해야 했습니다.
 정확히는 Cell에 속한 `mainImageView`가 화면에 나타나지 않았습니다.
 `addSubView(mainImageView)`로 분명히 화면에 나타냈고 오토 레이아웃을 설정했기에 오류를 찾는데 어려움을 겪었습니다..
 단계적으로 문제점을 찾아갔는데 셀의 `backgoroundColor`를 `.blue`로 설정하면 셀이 표시가 되었기에 `CollectionView`와 `MusicCollectionViewCell`이 연결되었음을 확인했습니다.
+
 ![error](https://github.com/kangsworkspace/DataStorage/assets/141600830/5a2edcd9-ade9-42c0-bf7d-80f100f3b742)
+
 따라서 문제는 `mainImageView`를 화면에 나타내는 부분에 있다고 생각하고 관련 코드를 점검했습니다.
 문제는 오토 레이아웃을 설정하는 방법에 있었습니다.
 에러가 난 코드에서는 오토레이아웃을 다음과 같이 설정하였습니다.
