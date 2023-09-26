@@ -10,7 +10,7 @@
 
 ## 👀 프로젝트 구성
 
-- 검색어를 담는 변수 `searchTerm`을 통해 "https://itunes.apple.com/search?media=music&term=searchTerm"에 네트워킹을 요청하고
+- 검색어를 담는 변수 `searchTerm`을 통해 \("https://itunes.apple.com/search?media=music&term=searchTerm")에 네트워킹을 요청하고
   받아온 정보를 JOSNDecoder()를 통해 JSON형식으로 바꾸어 필요한 정보를 구조체 `[music]`에 담아 사용하였습니다.
   
 - 앱을 실행시키고 나오는 첫화면은 테이블 뷰로 기본 검색어를 "zazz"로 설정하였습니다.
